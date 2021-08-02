@@ -40,9 +40,9 @@ while True:
 
         try:
         	requests.post('https://api.tinkoff.ru/v1/sign_up', data={'phone': '+'+_phone}, headers={})
-            print("[+] Tinkoff отправлено!") 
+        print("[+] Tinkoff отправлено!") 
         except Exception as ex: 
-        	print("[-] Tinkoff не отправлено!" + str(ex))
+        print("[-] Tinkoff не отправлено!" + str(ex))
 
         try:
             requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
