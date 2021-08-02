@@ -40,8 +40,7 @@ while True:
 
         try:
         	requests.post('https://api.tinkoff.ru/v1/sign_up', data={'phone': '+'+_phone}, headers={})
-        name = input()
-        print('[+] Tinkoff отправлено!') 
+        print("""[+] Tinkoff отправлено!""") 
         except Exception as ex: 
         	print('[-] Tinkoff не отправлено!' + str(ex))
 
