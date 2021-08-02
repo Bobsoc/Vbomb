@@ -71,7 +71,7 @@ while True:
             s=s
 
         try:
-            requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, ={})
+            requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
         except:
             s=s
 
