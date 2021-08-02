@@ -9,7 +9,7 @@ print("""
 ╭╯╰╯┃┃━┫╭╮┃╰╯┃╰┫┃┃┃
 ╰━━━┻━━┻╯╰┻━━┻━┻╯╰╯""")
 phone = input("\033[32m Введите номер +")
- def qw(_phone):
+def qw(_phone):
     if _phone[0] == '+':
         _phone = _phone[1:]
     if _phone[0] == '8':
