@@ -252,3 +252,9 @@ while True:
             print("[+] ivi вкинулся!") 
         except Exception as ex:  
             print("[-] ivi откинулся!" + str(ex))
+            
+        try:
+        	iteration += 1
+print(('{} круг пройден.').format(iteration))
+except:
+break
