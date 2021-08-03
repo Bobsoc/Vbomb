@@ -255,6 +255,8 @@ while True:
             
         try:
         	iteration += 1
-    print(('{} круг пройден.').format(iteration))
-    except:
+        print(('{} круг пройден.').format(iteration))
+        except:
         break
+        
+    
